@@ -1,8 +1,8 @@
-FROM debian:jessie
+FROM debian:stretch
 
 WORKDIR /
 ENV DEBIAN_FRONTEND=noninteractive
-ENV CERTBOT_VERSION=0.8.1
+ENV CERTBOT_VERSION=0.21.0
 RUN apt-get update \
   && apt-get install -y unzip curl python-pip \
   && pip install --upgrade pip \
