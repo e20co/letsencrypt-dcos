@@ -6,6 +6,7 @@ ENV CERTBOT_VERSION=0.21.0
 RUN apt-get update \
   && apt-get install -y unzip curl python-pip \
   && pip install --upgrade pip \
+  && pip install requests --upgrade \
   && pip install virtualenv --upgrade \
   && curl -Ls -o /certbot.zip https://github.com/certbot/certbot/archive/v${CERTBOT_VERSION}.zip \
   && unzip certbot.zip \
