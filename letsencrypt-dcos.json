@@ -20,7 +20,7 @@
       }
     ],
     "docker": {
-      "image": "e20co/letsencrypt-dcos:v1.0.4",
+      "image": "e20co/letsencrypt-dcos:latest",
       "network": "BRIDGE",
       "portMappings": [
         {
