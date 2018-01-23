@@ -4,7 +4,7 @@ WORKDIR /
 ENV DEBIAN_FRONTEND=noninteractive
 ENV CERTBOT_VERSION=0.21.0
 RUN apt-get update \
-  && apt-get install -y unzip curl python-pip \
+  && apt-get install -y unzip curl python-pip procps\
   && pip install --upgrade pip \
   && pip install requests --upgrade \
   && pip install virtualenv --upgrade \

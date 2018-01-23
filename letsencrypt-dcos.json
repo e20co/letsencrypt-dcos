@@ -21,6 +21,7 @@
     ],
     "docker": {
       "image": "e20co/letsencrypt-dcos:latest",
+      "forcePullImage": true,
       "network": "BRIDGE",
       "portMappings": [
         {
